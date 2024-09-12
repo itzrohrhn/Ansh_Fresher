@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<head>
+  <title>Parichay 2k24 &#169; YCAT &#169;Devs Rohh</title>
+  <link rel="icon" type="image/x-icon" href="https://iili.io/d5shi1S.png">
+  <meta name="description" content="Parichay 2k24 YCAT | Made with &#9829; by Rohh :)">
+  <!-- 
+  Made with love by Rohh!
+  
+     Blog:
+     Instagram: @itz_xy_rohh
+  Thanks to all <3
+-->
+</head>
+
+<body>
+
+  <!-- Ganti Audio di sini -->
+  <audio src="dewul.mp3" id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <!-- Wallpaper --><img src="dew.jpg" id="wallpaper" />
+    <div id="beneranblur"></div>
+  </div>
+
+  <div id='Content'>
+
+    <div id="kadoIn">
+      <!-- Tombol Surat -->
+       <img src="kado.png" />
+    </div>
+    <p id="ket">Hey :) Click on the Above !</p>
+
+    <div class="kumpulanstiker">
+      <!-- Stiker untuk Konten -->
+      <img src="bunga.gif" id="fotostiker" />
+      <img src="pusn.gif" id="fotostiker1" />
+      <img src="pandacoklat.gif" id="fotostiker2" />
+      <img src="cilukba.gif" id="fotostiker3" />
+      <img src="pandakuning.gif" id="fotostiker4" />
+      <img src="emawh.gif" id="fotostiker5" />
+
+      <img src="pandacoklat.gif" id="fotostiker6" />
+    </div>
+
+    <p id="halo" class="halo"></p>
+
+    <div>
+      <blockquote id='bq' data-text='F𝘳𝘰𝘮 your Seniors'>
+        <p id="kalimat">Dear Freshers :) </p>
+
+       <p id="pesan1">Click msg Below! </p>
+       <div id="kolombaru">
+         <li id="lv1"><i class="fa-solid fa-envelope"></i></li>
+         <!-- <li id="lv2"><i class="fa-regular fa-envelope"></i></li>
+         <li id="lv3"><i class="fa-regular fa-message"></i></li>
+         <li id="lv4"><i class="fa-solid fa-message"></i></li> -->
+       </div>
+
+        <p id="pesan2">Wait.. Wait.. Surprise.. <br> See What ?</p>
+        <!-- Pesan -->
+        <p id="pesan3">Finally the Wait is Over</p>
+        <p id="pesan4">Your are invited to <br> freshers 2k24 </p>
+        <p id="pesan5" class="gaya2">Lets embark on this new journey</p>
+        <p id="pesan6" class="gaya2">with enthusiasm and excitement.</p>
+        <p id="pesan7" class="gaya2">on 17th September <br> 9:00 A.M. <br>D.K.D College, ENGLISH Dept.</p>
+
+        <p id="pesan8" class="gaya2">We are are here to welcome you</p>
+        <p id="pesan9" class="gaya2">An excellent opportunity <br> to interact with <br> your peers</p>
+        <p id="pesan10" class="gaya2">Come ready to dance, laugh, and make unforgettable memories 🥳🎉</p>
+
+        <!-- Tombol Lanjut -->
+        <p id="opsL">Click Here to Continue...</p>
+      </blockquote>
+    </div>
+
+    <!-- Tombol Kirim Pesan -->
+    <div id="Tombol"><a id="By">&#128140; Carry On </a></div>
+
+    <!-- Pesan Tambahan -->
+    <p id="katatambahan" class="sembunyi">We're really Happy to Know That</p>
+
+    <!-- Pesan Ditolak -->
+    <div id="pesanditolak">
+      <img id="stikerditolak" src="weee.gif" />
+      <p id="kataditolak">Umm.. You Should not Miss this</p>
+    </div>
+
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const swalst = Swal.mixin({
+      timer: 2300,
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      timerProgressBar: true,
+      imageHeight: 90,
+    });
+    audio = new Audio('' + linkmp3.src);
+    ftganti = 0;
+    fungsi = 0;
+    fungsiAwal = 0;
+    deffotostiker = fotostiker.src;
+
+    function berjatuhan() {
+      const heart = document.createElement("div");
+      heart.className = "fas fa-snowflake";
+      heart.style.left = (Math.random() * 90) + "vw";
+      heart.style.animationDuration = (Math.random() * 3) + 2 + "s";
+      body.appendChild(heart);
+    }
+    setInterval(function name(params) {
+      var heartArr = document.querySelectorAll(".fa-snowflake");
+      if (heartArr.length > 100) {
+        heartArr[0].remove()
+      }
+    }, 100);
+    Content.style = "opacity:1;margin-top:16vh";
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+      cancelButtonColor: '#FF0040',
+      imageHeight: 80,
+    });
+
+    document.getElementById("kadoIn").onclick = function () {
+      if (fungsiAwal == 0) {
+        audio.play();
+        fungsiAwal = 1;
+        kadoIn.style = "transition:all .8s ease;transform:scale(10);opacity:0";
+        wallpaper.style = "transform: scale(1.5);";
+        ket.style = "display:none";
+        setTimeout(initengahan, 300);
+        setTimeout(inipesan, 500)
+      }
+    }
+
+    async function inipesan() {
+      var {
+        value: nama
+      } = await swals.fire({
+        title: 'Enter your Name here :)',
+        input: 'text',
+      });
+      if (nama && nama.length < 11) {
+        window.nama = nama;
+        vketikhalo = "Hai, " + nama + " ✨";
+        mulainama();
+      } else {
+        await swals.fire('Ups!', 'Name cant be empty or more than 10 char, ya!');
+        inipesan();
+      }
+    }
+
+    //Variable Pertanyaan Akhir
+    var tanya = 'Do you Wanna Join or Not ? 😶🎁';
+    var opstanya = 'Lets Answer ';
+    var tompositif = 'Yes';
+    var tomnegatif = 'No';
+
+    async function menuju() {
+      pesanwhatsapp = "Thanks for Inviting " + nama + " ME ><";
+      await swals.fire('OK!', 'if any Queries just WhatsApp, ya!', 'success');
+      window.location = "https://api.whatsapp.com/send?phone=" + pesanwhatsapp;
+    }
+  </script>
+  <script src="script.js"></script>
+  <!-- Sampai Sini -->
+</body>
+
+</html>
